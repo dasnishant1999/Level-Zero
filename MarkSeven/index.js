@@ -10,7 +10,7 @@ function constructURL(inputText) {
   return `${url}?text=${inputText}`;
 }
 
-function translateHandler() {
+function translater() {
   var text = input.value;
 
   fetch(constructURL(text))
@@ -25,4 +25,4 @@ function translateHandler() {
     });
 }
 
-translateBtn.addEventListener("click", translateHandler);
+translateBtn.addEventListener("click", translater);
